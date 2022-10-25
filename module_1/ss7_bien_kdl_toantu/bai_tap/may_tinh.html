@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        .button {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<h2>Calculator</h2>
+<table>
+    <tr>
+        <td>
+            <input type="number" id="input_1">
+        </td>
+        <td>
+            <input type="number" id="input_2">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" class="button" value="+" onclick="add()">
+        </td>
+        <td>
+            <input type="button" class="button" value="-" onclick="sub()">
+        </td>
+        <td>
+            <input type="button" class="button" value="*" onclick="multi()">
+        </td>
+        <td>
+            <input type="button" class="button" value="/" onclick="division()">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Result : <span id="result"></span></p>
+        </td>
+    </tr>
+    <script>
+        function add() {
+            let input_1 = +document.getElementById("input_1").value;
+            let input_2 = +document.getElementById("input_2").value;
+            let result_add = input_1 + input_2;
+            document.getElementById("result").innerHTML = result_add;
+        }
+
+        function sub() {
+            let input_1 = +document.getElementById("input_1").value;
+            let input_2 = +document.getElementById("input_2").value;
+            let result_sub = input_1 - input_2;
+            document.getElementById("result").innerHTML = result_sub;
+        }
+
+        function multi() {
+            let input_1 = +document.getElementById("input_1").value;
+            let input_2 = +document.getElementById("input_2").value;
+            let result_multi = input_1 * input_2;
+            document.getElementById("result").innerHTML = result_multi;
+        }
+
+        function division() {
+            let input_1 = +document.getElementById("input_1").value;
+            let input_2 = +document.getElementById("input_2").value;
+            let result_div = input_1 / input_2;
+            document.getElementById("result").innerHTML = result_div;
+        }
+    </script>
+</table>
+</body>
+</html>

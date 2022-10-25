@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .option {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <label><b>Amount</b> </label>
+        </td>
+        <td>
+            <label><b>From Currency</b></label>
+        </td>
+        <td>
+            <label><b>To Currency</b></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="amount">
+        </td>
+        <td>
+            <select class="option" id="select_1">
+                <option>VND</option>
+                <option>USD</option>
+            </select>
+        </td>
+        <td>
+            <select class="option" id="select_2">
+                <option>USD</option>
+                <option>VND</option>
+            </select>
+        </td>
+        <td>
+            <input type="button" onclick="transfer()" value="Convert">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Result : <span id="result"></span></p>
+        </td>
+    </tr>
+    <script>
+        function transfer() {
+            let input = document.getElementById("amount").value;
+            let select_1 = document.getElementById("select_1").value;
+            let select_2 = document.getElementById("select_2").value;
+            if
+            (select_1 == select_2) {
+                document.getElementById("result").innerHTML = input;
+            } else if (select_1 == "VND" && select_2 == "USD") {
+                document.getElementById("result").innerHTML = input / 24000 + " usd" ;
+            } else if (select_1 == "USD" && select_2 == "VND") {
+                document.getElementById("result").innerHTML = input * 24000 + "vnd";
+            }
+        }
+    </script>
+</table>
+</body>
+</html>
