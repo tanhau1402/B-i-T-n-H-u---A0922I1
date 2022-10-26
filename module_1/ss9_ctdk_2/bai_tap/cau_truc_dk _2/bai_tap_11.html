@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let income = parseInt(prompt("Nhap thu nhap cua ban thang nay : "));
+    if (income < 5000000) {
+        document.write("Thue thu nhap cua ban la : " + income * 5 / 100);
+    } else if (income > 5000000 && income <= 10000000) {
+        document.write("Thue thu nhap ca nhan cua ban la : " + income * 10 / 100);
+    } else if (income > 10000000 && income <= 20000000) {
+        document.write("Thue thu nhap ca nhan cua ban la : " + income * 15 / 100);
+    } else {
+        document.write("Thue thu nhap ca nhan cua ban la : " + income * 30 / 100);
+    }
+</script>
+</body>
+</html>

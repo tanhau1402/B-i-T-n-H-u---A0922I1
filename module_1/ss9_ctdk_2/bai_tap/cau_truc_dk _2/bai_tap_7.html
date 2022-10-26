@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let para_1 = parseInt(prompt("Enter the first parameter : "));
+    let para_2 = parseInt(prompt("Enter the second parameter : "));
+    let para_3 = parseInt(prompt("Enter the third parameter : "));
+    let delta = (para_2 * para_2) - 4 * para_1 * para_3;
+    if (delta < 0) {
+        document.write("the equation has no solution");
+    } else if (delta === 0) {
+        document.write("The equation has 1 double solution x1 = x2 = " + -para_2 / 2 * para_1);
+    } else if (delta > 0) {
+        document.write("The equation has two equations x1 = " + -para_2 + (Math.sqrt(delta) / 2 * para_1) + "x2 = ")
+    }
+</script>
+</body>
+</html>
