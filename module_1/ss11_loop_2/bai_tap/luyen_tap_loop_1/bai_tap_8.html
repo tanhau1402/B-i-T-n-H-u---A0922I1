@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let range = Number(prompt("Range from  0 to.... :  "));
+    let number = Number(prompt("Enter the number you want to guess : "));
+    let random_number;
+    if (range) {
+        random_number = Math.floor(Math.random() * range)
+        if (random_number === number) {
+            alert("You guessed right, Congratulation !! ");
+        } else {
+            while (random_number !== number) {
+                alert("You guessed wrong, another one ? ");
+                number = Number(prompt("Enter the number you want to guess : "));
+            }
+            alert("You guessed right")
+        }
+    }
+</script>
+</body>
+</html>

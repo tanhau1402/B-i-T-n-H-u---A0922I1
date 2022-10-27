@@ -1,4 +1,4 @@
-body{
+body {
     font-size: 2em;
     margin: 0;
     display: flex;
@@ -8,10 +8,11 @@ body{
     font-family: sans-serif;
 }
 
-.check{
+.check {
     position: relative;
 }
-.check::before{
+
+.check::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -21,9 +22,10 @@ body{
     top: -8px;
     left: -30px;
     border-radius: 25px;
-    box-shadow: 0 0 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
-.check::after{
+
+.check::after {
     content: '';
     width: 25px;
     height: 25px;
@@ -35,9 +37,10 @@ body{
     transition: 200ms;
 }
 
-.check:checked::after{
+.check:checked::after {
     left: -5px;
 }
-.check:checked::before{
+
+.check:checked::before {
     background-color: #8BC34A;
 }
