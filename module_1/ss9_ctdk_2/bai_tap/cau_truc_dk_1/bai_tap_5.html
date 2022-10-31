@@ -32,9 +32,9 @@
     </tr>
     <script>
         function show_score() {
-            let test_score = +document.getElementById("test_score").value;
-            let test_score_2 = +document.getElementById("test_score_2").value;
-            let score = (test_score + test_score_2) / 2;
+            let testScore = +document.getElementById("test_score").value;
+            let testScore2 = +document.getElementById("test_score_2").value;
+            let score = (testScore + testScore2) / 2;
             if (score < 3.5) {
                 document.getElementById("result").innerHTML = "Yeu";
             } else if (score > 3.5 && score < 6.5) {

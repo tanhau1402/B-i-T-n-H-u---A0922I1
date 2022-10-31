@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Day Of Months</title>
 </head>
 <body>
 <table>
@@ -11,7 +11,7 @@
             <input type="number" name="month" id="input_month">
         </td>
         <td>
-            <input type="button" value="Tính số ngày" onclick="day_of_month()">
+            <input type="button" value="Tính số ngày" onclick="dayOfMonth()">
         </td>
     </tr>
     <tr>
@@ -19,7 +19,7 @@
             <p>Result : <span id="result"></span></p>        </td>
     </tr>
     <script>
-        function day_of_month() {
+        function dayOfMonth() {
             let input = document.getElementById("input_month").value;
             switch (input) {
                 case "1":
