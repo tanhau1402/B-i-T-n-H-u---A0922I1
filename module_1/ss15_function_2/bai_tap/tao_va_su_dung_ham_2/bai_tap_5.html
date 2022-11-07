@@ -6,9 +6,18 @@
 </head>
 <body>
 <script>
-  function findMinNumber(number_1,number_2,number_3) {
+    function findMinNumber(number_1, number_2, number_3) {
+        let max = number_1;
+        if (number_2 > max) {
+            max = number_2;
+        }
+        if (number_3 > max) {
+            max = number_3;
+        }
+        return max;
+    }
 
-  }
+    document.write(findMinNumber(4, 6, 3));
 </script>
 </body>
 </html>

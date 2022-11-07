@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr_length = prompt("Do dai cua mang so : ");
+    let arr = [];
+    for (let i = 0; i < arr_length; i++) {
+        arr[i] = Number(prompt("Nhap vao cac phan tu cua mang so : "));
+    }
+
+    //document.write(arr);
+    function reverseArray() {
+        document.write(" reverse array : " + arr.reverse());
+    }
+
+    reverseArray()
+</script>
+</body>
+</html>

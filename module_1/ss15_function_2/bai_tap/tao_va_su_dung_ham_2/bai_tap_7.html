@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi chỗ hai số nguyên</title>
+</head>
+<body>
+<script>
+    let num_1 = parseInt(prompt("first number : "));
+    let num_2 = parseInt(prompt("second number : "));
+
+    function swapNum() {
+        num_1 = num_1 + num_2;
+        num_2 = num_1 - num_2;
+        num_1 = num_1 - num_2;
+        document.write("after swap : " + num_1 + "," + num_2);
+    }
+
+    swapNum()
+</script>
+</body>
+</html>
