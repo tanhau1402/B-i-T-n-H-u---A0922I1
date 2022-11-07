@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số ký tự số trong mảng</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let arrayNumber = [];
+    let arrayLength = Number(prompt("Nhap vao do dai cua mang : "));
+    for (let i = 0; i < arrayLength; i++) {
+        array[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
+    }
+    for (let j = 0; j < arrayLength; j++) {
+        if (array[j] % 2 === 0 || array[j] % 2 !== 0) {
+            arrayNumber.push(array[j])
+        }
+    }
+    let new_arr_length = arrayNumber.length - 1;
+    document.write("so ki tu  so trong mang la : " + new_arr_length);
+</script>
+</body>
+</html>

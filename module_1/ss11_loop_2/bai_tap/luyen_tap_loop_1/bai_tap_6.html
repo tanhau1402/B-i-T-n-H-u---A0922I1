@@ -6,13 +6,15 @@
 </head>
 <body>
 <script>
-    for (let i = 1; i < 220; i++) {
-        if (i % 7 === 0) {
-            document.write(i + "<br>");
-        } else {
-            document.write(" ");
+    let number = +window.prompt(".");
+    let total = 0;
+    for (let i = 1; i  < number; i++) {
+        if (i % 7 === 0 ) {
+
         }
+        total = total + i;
     }
+    document.write(total);
 </script>
 </body>
 </html>

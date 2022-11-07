@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+
+</head>
+<body>
+<script>
+    let english = ["one", "two", "three", "four", "five"];
+    let vietnamese = ["một", "hai", "ba", "bốn", "năm"];
+    let input = prompt("input keyword : ");
+    let index = english.indexOf(input);
+    if (index != -1) {
+        document.write(vietnamese[index]);
+    } else {
+        document.write("Not found !");
+    }
+</script>
+</body>
+</html>

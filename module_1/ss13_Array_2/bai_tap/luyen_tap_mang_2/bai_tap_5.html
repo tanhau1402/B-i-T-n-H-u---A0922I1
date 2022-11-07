@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> kiểm tra xem hai chuỗi có giống nhau hay không</title>
+</head>
+<body>
+<script>
+    let arr_A_length = prompt("Nhap vao do dai cua mang A : ");
+    let arr_A = [];
+    for (let i = 0; i < arr_A_length; i++) {
+        arr_A[i] = prompt("Nhap vao cac phan tu cua mang A : ");
+    }
+    let arr_B_length = prompt("Nhap vao do dai cua mang B : ");
+    let arr_B = [];
+    for (let j = 0; j < arr_B_length; j++) {
+        arr_B[j] = prompt("Nhap vao cac phan tu cua mang B : ");
+    }
+    //document.write(arr_A + " <br>" + arr_B);
+    let sameArray = JSON.stringify(arr_A) === JSON.stringify(arr_B);
+    document.write(sameArray);
+
+</script>
+</body>
+</html>

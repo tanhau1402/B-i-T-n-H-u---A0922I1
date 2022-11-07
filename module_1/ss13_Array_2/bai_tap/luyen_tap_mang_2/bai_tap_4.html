@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số từ trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arr_character = [];
+    let arr_length = Number(prompt("Nhap vao do dai cua mang : "));
+    for (let i = 0; i < arr_length; i++) {
+        arr[i] = Number(prompt(" Nhap vap cac phan tu cua mang : "));
+    }
+    for (let j = 0; j < arr_length; j++) {
+        if (arr[j] !== Number) {
+            arr_character.push(arr[j]);
+        }
+    }
+    let arr_character_length = arr_character.length - 1;
+    document.write(arr_character_length)
+</script>
+</body>
+</html>

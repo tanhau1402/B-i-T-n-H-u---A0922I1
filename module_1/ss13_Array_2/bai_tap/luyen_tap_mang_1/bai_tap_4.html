@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dao nguoc mang</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let new_arr = [];
+    let array_length = Number(prompt('Nhap vao do dai cua mang : '));
+    for (let i = 0; i < array_length; i++) {
+        array[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
+    }
+    //document.write("array : " + array);
+
+
+    for (let j = array_length - 1; j >= 0; j--) {
+        new_arr.push(array[j]);
+    }
+    document.write("new arr : " + new_arr);
+
+</script>
+</body>
+</html>

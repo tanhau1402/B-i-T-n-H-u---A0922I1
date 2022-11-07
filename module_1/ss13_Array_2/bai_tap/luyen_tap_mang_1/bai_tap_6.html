@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find V in the array</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let input = Number(prompt("Nhap vao phan tu can tim : "));
+    for (let i = 0; i < 10; i++) {
+        array[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
+    }
+    for (let i = 0; i < array.length; i++) {
+        if (input === array[i]) {
+            document.write(input + " in the array ");
+        }
+    }
+</script>
+</body>
+</html>

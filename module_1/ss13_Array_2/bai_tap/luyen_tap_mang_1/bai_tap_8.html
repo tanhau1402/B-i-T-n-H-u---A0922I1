@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sap xep mang tu be den lon</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for (let i = 0; i < 10; i++) {
+        array[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
+    }
+    array.sort(function (a, b) {
+        return b - a
+    })
+    document.write("new array : " + array);
+</script>
+</body>
+</html>

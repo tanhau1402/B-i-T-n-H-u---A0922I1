@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max value & sum all value</title>
+</head>
+<body>
+<script>
+    let max_Value = [0];
+    let sum = 0;
+    let array_Length = Number(prompt("Nhap do dai cua mang : "));
+    let array = [];
+    for (let i = 0; i < array_Length; i++) {
+        array[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
+    }
+    for (let j = 0; j < array_Length; j++) {
+        if (max_Value < array[j]) {
+            max_Value = array[j];
+        }
+    }
+    for (let k = 0; k < array_Length; k++) {
+        sum += array[k];
+    }
+    document.write("so lon nhat trong mang : " + max_Value + "<br>");
+    document.write(" trung binh cong : " + sum / array.length);
+</script>
+</body>
+</html>
