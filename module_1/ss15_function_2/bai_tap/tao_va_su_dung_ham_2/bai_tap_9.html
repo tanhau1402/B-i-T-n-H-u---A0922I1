@@ -2,30 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>kiểm tra  ký tự  có nằm trong mảng không</title>
+    <title>kiểm tra ký tự có nằm trong mảng không</title>
 </head>
 <body>
 <script>
-  let character = parseInt(prompt("Enter character : "));
-  let arr_length = prompt("do dai cua mang : ");
-  let arr = [];
-  let new_arr = [];
-  for (let i = 0; i < arr_length; i++) {
-    arr[i] = prompt("Nhap cac phan tu cua mang so : ");
-  }
-  //document.write(arr);
-  function checkCharacterInArray() {
-    for (let j = 0; j < arr_length; j++) {
-      if (arr[j] === character) {
-        new_arr.push(arr[j]);
-        document.write("so lan xuat hien : " + new_arr.length);
-      }else {
-        document.write("-1");
-        break;
-      }
+    let character = parseInt(prompt("Enter character : "));
+    let arr_length = prompt("do dai cua mang : ");
+    let arr = [];
+    let count = 0;
+    for (let i = 0; i < arr_length; i++) {
+        arr[i] = parseInt(prompt("Nhap cac phan tu cua mang so : "));
     }
-  }
-  checkCharacterInArray()
+
+    //document.write(arr);
+    function checkCharacterInArray() {
+        for (let j = 0; j < arr_length; j++) {
+            if (arr[j] === character) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            document.write("so lan xuat hien : " + count);
+        } else {
+            document.write("-1");
+        }
+    }
+
+    checkCharacterInArray()
+
 </script>
 </body>
 </html>
