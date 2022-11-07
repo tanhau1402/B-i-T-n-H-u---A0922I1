@@ -9,14 +9,16 @@
   let character = parseInt(prompt("Enter character : "));
   let arr_length = prompt("do dai cua mang : ");
   let arr = [];
+  let new_arr = [];
   for (let i = 0; i < arr_length; i++) {
     arr[i] = prompt("Nhap cac phan tu cua mang so : ");
   }
   //document.write(arr);
   function checkCharacterInArray() {
-    for (let i = 0; i < arr_length; i++) {
-      if (character === arr[i]) {
-        document.write("true");
+    for (let j = 0; j < arr_length; j++) {
+      if (arr[j] === character) {
+        new_arr.push(arr[j]);
+        document.write("so lan xuat hien : " + new_arr.length);
       }else {
         document.write("-1");
         break;

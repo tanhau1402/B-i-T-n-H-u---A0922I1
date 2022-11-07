@@ -8,10 +8,10 @@
 <script>
     let array = [];
     let max = [0];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 10; i++) {
         array[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
     }
-    //document.write("array : " + array);
+    document.write("array : " + array + "<br>");
     for (let j = 1; j < array.length; j++) {
         if (max < array[j]) {
             max = array[j];
