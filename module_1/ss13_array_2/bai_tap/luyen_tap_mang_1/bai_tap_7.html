@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  for (let i = 0; i < 10; i++) {
+    arr[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
+  }
+  document.write("mang cu :" + arr + "<br>");
+  let input = parseInt(prompt("Enter value : "));
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === input) {
+      //console.log(arr.indexOf(input));
+      arr.splice(arr.indexOf(input), 1);
+    }
+  }
+  document.write("mang moi : " + arr);
+</body>
+</html>

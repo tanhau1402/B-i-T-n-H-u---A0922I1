@@ -3,19 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Ung dung quan li san pham</title>
-  <h3>Add New Product</h3>
+    <h3>Add New Product</h3>
+    <style>
+        .input_text {
+            width: 250px;
+            height: 30px;
+        }
+
+        .button {
+            width: 60px;
+            height: 35px;
+            background-color: #53ba39;
+            border-radius: 4px;
+            font-family: "Andale Mono";
+
+
+        }
+
+        table {
+            background-color: #dddddd;
+        }
+
+        th {
+            background-color: #eeeeee;
+            width: 200px;
+        }
+
+        td {
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
-<input type="text" id="product" placeholder="New Product">
-<input type="button" value="Add" onclick="addProduct()">
+<input type="text" id="product" placeholder="New Product" class="input_text">
+<input type="button" value="Add" onclick="addProduct()" class="button">
 <h3>Display All Product</h3>
 <table>
-  <tr>
-    <th>Product </th>
-  </tr>
+    <tr>
+        <th>Product Name</th>
+        <th>Edit Product</th>
+        <th>Delete Product</th>
+    </tr>
+    <tr>
+        <td><p><strong><span id="product_1"></span></strong></p></td>
+        <td>
+            <button onclick="editProduct()" class="button">Edit</button>
+        </td>
+        <td>
+            <button class="button" onclick="deleteProduct()">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td><p><strong><span id="product_2"></span></strong></p></td>
+        <td></td>
+        <td></td>
+    </tr>
 </table>
 <script>
+    function addProduct() {
+        let product = document.getElementById("product").value;
+        document.getElementById("product_1").innerHTML = product;
+    }
 
+    function editProduct() {
+        let new_product = window.prompt("Edit your product :");
+        document.getElementById("product_1").innerHTML = new_product;
+    }
+
+    function deleteProduct() {
+        document.getElementById("product_1").innerHTML = " ";
+    }
 </script>
 </body>
 </html>
