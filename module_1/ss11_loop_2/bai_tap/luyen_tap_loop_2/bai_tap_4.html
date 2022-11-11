@@ -6,7 +6,15 @@
 </head>
 <body>
 <script>
-
+    let col = parseInt(prompt("Enter so dong :"));
+    let cow = parseInt(prompt("Enter so cot : "));
+    for (let i = 0; i < col; i++) {
+        for (let j = 0; j < cow; j++) {
+            if (i == 0||i == col -1 || j == 0|| j == cow - 1) {
+                document.write("*")
+            }
+        }
+    }
 </script>
 </body>
 </html>

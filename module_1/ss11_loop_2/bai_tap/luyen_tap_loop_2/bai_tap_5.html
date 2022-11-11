@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let month = parseInt(prompt("So thang vay :"));
+    let rate = parseInt(prompt("Lai suat cho vay :"));
+    let money = parseInt(prompt("So tien vay :"));
+    let principal = money / month;
+    let interest =(money * rate) / month;
+    total = principal + interest;
+    document.write("Tien goc phai tra : " + principal + "vnd" + "<br>");
+    document.write("Tien lai phai tra : " + interest +  "vnd" + "<br>");
+    document.write("total : " + total + "vnd");
+</script>
 </body>
 </html>
