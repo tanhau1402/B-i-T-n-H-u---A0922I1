@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class Rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+
+    class Rectangle {
+        constructor(width, length) {
+            this.width = width;
+            this.length = length;
+        }
+
+        setWidth(newWidth) {
+            this.width = newWidth;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        setLength(newLength) {
+            this.length = newLength;
+        }
+
+        getLength() {
+            return this.length;
+        }
+
+        getPerimeter() {
+            return (this.width + this.length) * 2;
+        }
+
+        getArea() {
+            return this.width * this.length;
+        }
+    }
+
+    function changeValue() {
+        let newLength = window.prompt("Enter new Length : ");
+        let newWidth = window.prompt("Enter new Width : ");
+    }
+
+    let newRectangle = new Rectangle(50, 100);
+    // newRectangle.setWidth(500);
+    // newRectangle.setLength(700);
+    let newArea = newRectangle.getArea();
+    let perimeterArea = newRectangle.getPerimeter();
+    document.write("<br>" + " area : " + newArea + "<br>");
+    document.write(" perimeter :" + perimeterArea + "<br>");
+    let canvas = document.getElementById("myCanvas");
+    if (canvas.getContext) {
+        let ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#fa4b2a';    // color of fill
+        ctx.fillRect(10, 40, newRectangle.length, newRectangle.width); // create rectangle
+    }
+
+</script>
+</body>
+</html>

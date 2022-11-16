@@ -6,37 +6,38 @@
 </head>
 <body>
 <script>
-  // function checkPalindrome(word) {
-  //   let l = word.length;
-  //   let flag = false;
-  //   for (let i = 0; i < l / 2; i++) {
-  //     if (word.charAt(i) !== word.charAt(l - 1 - i)) ;
-  //     flag = false;
-  //   }
-  //   if (flag === false) {
-  //     document.write(word + " is not a palindrome")
-  //   } else {
-  //     document.write(word + " is a palindrome")
-  //   }
-  // }
-  //
-  //
-  // checkPalindrome("madam")
-  function checkPalindrome(word) {
-    let l = word.length;
-    for (let i = 0; i < l / 2; i++) {
-      if (word.charAt(i) !== word.charAt(l - 1 - i)) {
-        return false;
-      }
+    // function checkPalindrome(word) {
+    //   let l = word.length;
+    //   let flag = false;
+    //   for (let i = 0; i < l / 2; i++) {
+    //     if (word.charAt(i) !== word.charAt(l - 1 - i)) ;
+    //     flag = false;
+    //   }
+    //   if (flag === false) {
+    //     document.write(word + " is not a palindrome")
+    //   } else {
+    //     document.write(word + " is a palindrome")
+    //   }
+    // }
+    //
+    //
+    // checkPalindrome("madam")
+    function checkPalindrome(word) {
+        let l = word.length;
+        //document.write(l);
+        for (let i = 0; i < l / 2; i++) {
+            if (word.charAt(i) !== word.charAt(l - 1 - i)) {
+                return false;
+            }
+        }
+        return true;
     }
-    return true;
-  }
 
-  if (checkPalindrome("'madam")) {
-    document.write("The word is a palindrome");
-  } else {
-    document.write("The word is NOT a palindrome");
-  }
+    if (checkPalindrome("madam")) {
+        document.write("The word is a palindrome");
+    } else {
+        document.write("The word is NOT a palindrome");
+    }
 
 </script>
 </body>

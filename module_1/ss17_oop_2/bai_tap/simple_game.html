@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Game</title>
+</head>
+<body>
+<script>
+  class Hero {
+    constructor(image,top,left,right,down,size) {
+      this.image = image;
+      this.top = top;
+      this.left = left;
+      this.right = right;
+      this.down = down;
+      this.size = size;
+    }
+    getHeroElement() {
+      return '<img width="'+ this.size + '"' +
+              ' height="'+ this.size + '"' +
+              ' src="' + this.image +'"' +
+              ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+    }
+    moveRight() {
+        this.left += 20;
+    }
+  }
+  let hero = new Hero('pikachu.png',20,30,200);
+</script>
+</body>
+</html>

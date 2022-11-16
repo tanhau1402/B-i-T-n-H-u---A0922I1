@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class circle</title>
+</head>
+<body>
+<script>
+    class Circle {
+        constructor(radius) {
+            this.radius = radius;
+        }
+
+        setRadius(newRadius) {
+            this.radius = newRadius;
+        }
+
+        getRadius() {
+            return this.radius;
+        }
+
+        getArea() {
+            return 3.14 * this.radius * this.radius;
+        }
+    }
+
+    let myCircle = new Circle(2);
+    let area = myCircle.getArea();
+    document.write(area)
+</script>
+</body>
+</html>

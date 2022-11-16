@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(temperC, temperF, temperK) {
+            this.temperC = 25;
+            this.temperF = temperF;
+            this.temperK = temperK;
+        }
+
+        getTemperF() {
+            return this.temperF;
+        }
+
+        getTemperK() {
+            return this.temperK;
+        }
+
+        CtoF() {
+            return (9 / 5 * this.temperC) + 32;
+        }
+
+        CtoK() {
+            return this.temperC + 273.15;
+        }
+    }
+
+    let newTemper = new Temperature();
+    let newTemperF = newTemper.CtoF();
+    document.write(newTemperF);
+</script>
+</body>
+</html>

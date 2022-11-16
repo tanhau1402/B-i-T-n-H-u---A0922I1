@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class mobile</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(name, battery, memory1, memory2, memory3) {
+            this.battery = battery;
+            this.name = name;
+            this.memory1 = memory1;
+            this.memory2 = memory2;
+            this.memory3 = memory3;
+        }
+
+        setName(newName) {
+            this.name = newName;
+        }
+
+        getName() {
+            return this.name;
+        }
+        setBattery(newBattery) {
+            this.battery = newBattery;
+        }
+        getBattery() {
+            return this.battery;
+        }
+
+        CheckBattery() {
+            if (this.battery > 0) {
+                alert("phone is on !");
+            } else {
+                alert("No battery !");
+            }
+        }
+
+        TurnOn() {
+            if (this.battery > 0) {
+            }
+        }
+
+        TurnOff() {
+            if (this.battery < 0) {
+            }
+        }
+
+        Charging() {
+            if (this.battery < 100) {
+                this.battery++;
+            } else {
+                alert("Da sac day !")
+            }
+        }
+
+        Using() {
+            this.battery--;
+        }
+
+        Message(str) {
+            if (this.TurnOn()) {
+                return str;
+            } else {
+                return 0;
+            }
+            this.Using()
+        }
+    }
+</script>
+</body>
+</html>
