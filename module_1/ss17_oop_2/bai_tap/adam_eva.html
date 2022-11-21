@@ -42,6 +42,12 @@
             this.weight = weight;
             this.message = message;
         }
+        setApple(newApple) {
+            this.apple = newApple;
+        }
+        getApple() {
+            return this.apple.weightInfo()
+        }
 
         setName(newName) {
             this.name = newName;
@@ -88,11 +94,11 @@
         }
 
         eatApple(Apple) {
-            if (Apple.appleWeight > 0) {
+            if (Apple.appleWeight === 0) {
+                alert("apple weight is empty ! ");
+            } else {
                 this.weight++;
                 Apple.appleWeight--;
-            } else {
-                alert("apple weight is empty !");
             }
         }
 
@@ -107,7 +113,8 @@
 
     let apple = new Apple(6);
     let human = new Human("Nam", "male", 45, "sdsdsdsd");
-
+human.eatApple()
+    human.checkAppleWeight()
 </script>
 </body>
 </html>
