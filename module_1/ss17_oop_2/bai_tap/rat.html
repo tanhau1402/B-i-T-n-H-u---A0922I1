@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rat {
+        constructor(name, speed, ratWeight) {
+            this.name = name;
+            this.speed = speed;
+            this.ratWeight = ratWeight;
+            this.status = null;
+        }
+
+        setName(value) {
+            this.name = value;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setSpeed(value) {
+            this.speed = value;
+        }
+
+        getSpeed() {
+            return this.speed;
+        }
+        setRatWeight(value) {
+            this.ratWeight = value;
+        }
+
+        getRatWeight() {
+            return this.ratWeight;
+        }
+
+        speak() {
+            alert("cjitcjit");
+        }
+
+        isAlive() {
+            if (this.status === true) {
+                alert("aLIVE");
+            } else {
+                alert("not alive");
+            }
+        }
+        ratWei() {
+            return this.speed;
+        }
+    }
+
+    class Cat{
+        constructor(name, weight, maxSpeed) {
+            this.maxSpeed = maxSpeed;
+            this.name = name;
+            this.weight = weight;
+        }
+        setMaxSpeed(value) {
+            this.maxSpeed = value;
+        }
+        getMaxSpeed() {
+            return this.maxSpeed;
+        }
+        setName(value) {
+            this.name = value;
+        }
+
+        getName() {
+            return this.name;
+        }
+        get_Weight() {
+            return this.weight;
+        }
+        CatSpeak() {
+            alert("mmm");
+        }
+        catch(Rat) {
+            if (this.maxSpeed >this ) {
+                alert("done");
+            }else {
+                alert("nope");
+            }
+        }
+        eat(Rat) {
+
+        }
+
+    }
+let rat = new Rat("rat",100,100);
+    let cat = new Cat("cat",100,120)
+    cat.catch()
+</script>
+</body>
+</html>

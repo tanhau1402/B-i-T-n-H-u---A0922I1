@@ -41,6 +41,7 @@
                 this._weight++;
                 Apple.decrease();
             }
+            alert("");
         }
 
         checkApple(Apple) {
@@ -66,16 +67,17 @@
         checkHuman() {
             document.write("name : " + this.name + "<br>" + "gender : " + this.gender + "<br>" + "weight : " + this._weight);
         }
+
+        checkAppleWeight(Apple) {
+
+        }
     }
 
     let n1 = new Human("hau", true, 33);
     let n2 = new Human("aa", true, 45);
-    let a1 = new Apple(3);
-    let a2 = new Apple(4);
-    n1.eat(a1);
-    n1.eat(a1);
+    let a1 = new Apple();
+    let a2 = new Apple();
     n1.checkHuman()
-
 </script>
 </body>
 </html>

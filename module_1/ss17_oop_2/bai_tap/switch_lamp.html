@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch and Lamp</title>
+</head>
+<body>
+<script>
+    class Switch {
+        constructor() {
+            this.lamp = null;
+            this.status = false;
+        }
+
+        TurnOn() {
+            this.lamp.status === true;
+            alert("on");
+        }
+
+        TurnOff() {
+            this.lamp.status === false;
+            alert("off");
+        }
+
+        connectToLamp(newLamp) {
+            this.lamp = newLamp;
+        }
+    }
+
+    class Lamp {
+        constructor() {
+            this.status = false;
+        }
+
+        Turn0n() {
+            if (this.status === true) {
+                alert("lamp is on ");
+            }
+        }
+
+        TurnOff() {
+            if (this.status === false) {
+                alert("lamp is off !");
+            }
+        }
+    }
+
+    let switch_ = new Switch()
+    let lamp = new Lamp()
+    switch_.connectToLamp(lamp);
+    switch_.TurnOff()
+
+
+</script>
+</body>
+</html>
