@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let income = prompt("nhap luong :  ");
+    if (income < 7000000) {
+        let rage = 5 * income / 100
+        document.write(" income : " + (income - rage));
+    } else if (income > 7000000 && income < 15000000) {
+        let rage = 10 * income / 100;
+        document.write("income : " + (income - rage));
+    } else if (income >= 15000000) {
+        let rage = 20 * income / 100;
+        document.write("income : " + (income - rage));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h2>My Menu</h2>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input onclick="showInfo()" type="radio"/>1. Cafe</td>
+    </tr>
+    <tr>
+        <td><input onclick="showInfo()" type="radio"/>2. Cam vắt</td>
+    </tr>
+    <tr>
+        <td><input onclick="showInfo()" type="radio"/>3. Nước ép cà rốt </td>
+    </tr>
+    <tr>
+        <td><input onclick="showInfo()" type="radio"/>4. Nước ép cà chua</td>
+    </tr>
+    <tr>
+        <td><input onclick="showInfo()" type="radio"/>5. Nước lọc</td>
+    </tr>
+    <tr>
+        <td><input onclick="showInfo()" type="radio"/>6. Nước 2</td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="Done" onclick="order()">
+            <input type="button" value="Cancel" onclick="cancel()">
+        </td>
+    </tr>
+</table>
+<script>
+    function showInfo() {
+        prompt(" gia : 15000 nhap so luong : ");
+    }
+</script>
+</body>
+</html>

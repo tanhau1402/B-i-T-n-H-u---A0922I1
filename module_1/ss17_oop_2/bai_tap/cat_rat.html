@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>cat catch rat</title>
 </head>
 <body>
 <script>
@@ -11,7 +11,7 @@
             this.name = name;
             this.speed = speed;
             this.ratWeight = ratWeight;
-            this.status = null;
+            this.status = true;
         }
 
         setName(value) {
@@ -29,6 +29,7 @@
         getSpeed() {
             return this.speed;
         }
+
         setRatWeight(value) {
             this.ratWeight = value;
         }
@@ -42,29 +43,29 @@
         }
 
         isAlive() {
-            if (this.status === true) {
-                alert("aLIVE");
-            } else {
-                alert("not alive");
-            }
+            this.status = true;
         }
-        ratWei() {
+
+        ratSpeed() {
             return this.speed;
         }
     }
 
-    class Cat{
+    class Cat {
         constructor(name, weight, maxSpeed) {
             this.maxSpeed = maxSpeed;
             this.name = name;
             this.weight = weight;
         }
+
         setMaxSpeed(value) {
             this.maxSpeed = value;
         }
+
         getMaxSpeed() {
             return this.maxSpeed;
         }
+
         setName(value) {
             this.name = value;
         }
@@ -72,27 +73,38 @@
         getName() {
             return this.name;
         }
+
         get_Weight() {
             return this.weight;
         }
+
         CatSpeak() {
             alert("mmm");
         }
+
         catch(Rat) {
-            if (this.maxSpeed >this ) {
+            if (this.maxSpeed > Rat.ratSpeed()) {
                 alert("done");
-            }else {
-                alert("nope");
+            } else {
+                alert("too slow");
             }
         }
-        eat(Rat) {
 
+        eat(Rat) {
+            if (Rat.isAlive()) {
+                alert("rat died ");
+            } else {
+                this.weight += Rat.getRatWeight();
+                alert("done, new weight  :" + this.weight);
+            }
         }
 
     }
-let rat = new Rat("rat",100,100);
-    let cat = new Cat("cat",100,120)
-    cat.catch()
+
+    let rat = new Rat("cat_rat.html", 100, 17);
+    let cat = new Cat("cat", 100, 200)
+    cat.catch(rat)
+    cat.eat(rat)
 </script>
 </body>
 </html>

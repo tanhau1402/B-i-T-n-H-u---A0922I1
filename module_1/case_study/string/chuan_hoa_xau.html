@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let txtS = prompt("nhap xau ki tu : ");
+    let tmp
+    let kq = " ";
+
+    arr = txtS.split(" ");//tach chuoi vao mang theo khoang trang
+    for (let i = 0; i < arr.length; i++) {//duyet tu dau mang
+        tmp = arr[i].trim().toLowerCase()//xoa khoang cach truoc sau tu , chuyen ve chu thuong
+        if (tmp !== "") {
+            tmp = tmp.substr(0, 1).toUpperCase() + tmp.substr(1);
+            kq += tmp + " ";
+        }
+    }
+    document.write(kq.trim());//xoa khoang cah cuoi chuoi
+</script>
+</body>
+</html>

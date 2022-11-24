@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let character = ["mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chin"];
+    let myInput = prompt("enter number : ");
+    let myArr = myInput.split('');
+    //document.write(myArr)
+    for (let i = 0; i < myArr.length; i++) {
+        if (myArr[i] == num[i]) {
+            document.write(character[i])
+        }
+    }
+</script>
+</body>
+</html>

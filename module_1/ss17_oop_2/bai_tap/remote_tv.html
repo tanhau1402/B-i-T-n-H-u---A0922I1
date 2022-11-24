@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remote dieu khien tv</title>
+</head>
+<body>
+<script>
+    class Remote {
+        constructor(number) {
+            this.number = number;
+        }
+
+        setNumber(value) {
+            this.number = value;
+        }
+
+        getNumber() {
+            return this.number;
+        }
+
+        volumeUp(TiVi) {
+            TiVi.volume++;
+        }
+
+        volumeDown(TiVi) {
+            TiVi.volume--;
+        }
+        transfer() {
+
+        }
+        TurnOn(TiVi) {
+
+        }
+
+    }
+
+    class TiVi {
+        constructor(volume) {
+            this.info = {};
+            this.volume = volume;
+            this.status = false;
+        }
+
+        getVolume() {
+            return this.volume;
+        }
+
+        checkStatus() {
+            if (this.status) {
+                alert("tv is on");
+            } else {
+                alert("tv is off")
+            }
+        }
+        checkVolume() {
+            alert(this.volume);
+        }
+    }
+    let remote = new Remote()
+    let tv = new TiVi(3);
+   remote.TurnOn(tv)
+    tv.checkStatus()
+
+</script>
+</body>
+</html>

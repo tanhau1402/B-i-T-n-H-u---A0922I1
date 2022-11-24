@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max Fraction</title>
+</head>
+<body>
+<script>
+    let numerators = [5, 2, 5];
+    let denominators = [6, 3, 4];
+    let my = [];
+    for (let i = 0; i < numerators.length; i++) {
+        let a = numerators[i] / denominators[i]
+        my.push(a);
+    }
+    let max = my[0];
+    for (let j = 1; j < numerators.length; j++) {
+        if (my[j] > max) {
+            max = my[j];
+        }
+    }
+    document.write("index of max : " + my.indexOf(max))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prefix sums</title>
+</head>
+<body>
+<script>
+    let arr_length = prompt("do dai cua mang so : ");
+    let arr = [];
+    for (let i = 0; i < arr_length; i++) {
+        arr[i] = Number(prompt("cac phan tu cua mang so : "));
+    }
+    document.write("array : " + arr + "<br>")
+    for (let j = 1; j < arr_length; j++) {
+        arr[j] += arr[j - 1]
+    }
+    document.write("prefix sums : " + arr);
+</script>
+</body>
+</html>
