@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max min trong mang 2 chieu</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    let m = prompt("enter m : ");
+    let n = prompt("enter n : ");
+    for (let i = 0; i < n; i++) {
+        numbers[i] = [];
+        for (let j = 0; j < m; j++) {
+            numbers[i][j] = Math.floor((Math.random() * 10) + 1);
+        }
+    }
+    document.write(numbers + "<br>")
+
+    function maxValue() {
+        let max = numbers[0][0];
+        for (let i = 0; i < numbers.length; i++) {
+            for (let j = 0; j < numbers.length; j++) {
+                if (numbers[i][j] > max) {
+                    max = numbers[i][j];
+                }
+            }
+
+
+        }
+        document.write("max : " + max + "<br>");
+    }
+
+    function minValue() {
+        let min = numbers[0][0];
+        for (let i = 0; i < numbers.length; i++) {
+            for (let j = 0; j < numbers.length; j++) {
+                if (numbers[i][j] < min) {
+                    min = numbers[i][j];
+                }
+            }
+        }
+        document.write("min : " + min);
+    }
+
+    maxValue(numbers);
+    minValue(numbers);
+</script>
+</body>
+</html>
